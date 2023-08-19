@@ -23,3 +23,5 @@ Route::get('/app', function () {
 
 Route::get('/app/show/{id}', [\App\Http\Controllers\UserController::class, 'show'])->name('user.show');
 Route::get('/app/edit/{id}', [\App\Http\Controllers\UserController::class, 'edit'])->name('user.edit');
+
+Route::get('/kategori',\App\Http\Livewire\Kategori::class);
